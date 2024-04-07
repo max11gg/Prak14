@@ -1,0 +1,12 @@
+2024-04-04 23:50:53.1101|INFO|Program|Application started
+2024-04-04 23:50:53.5202|INFO|Microsoft.AspNetCore.DataProtection.KeyManagement.XmlKeyManager|User profile is available. Using 'C:\Users\olp20\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2024-04-04 23:50:53.6694|INFO|Microsoft.Hosting.Lifetime|Now listening on: http://localhost:5246
+2024-04-04 23:50:53.6694|INFO|Microsoft.Hosting.Lifetime|Application started. Press Ctrl+C to shut down.
+2024-04-04 23:50:53.6694|INFO|Microsoft.Hosting.Lifetime|Hosting environment: Development
+2024-04-04 23:50:53.6694|INFO|Microsoft.Hosting.Lifetime|Content root path: C:\Users\olp20\Desktop\ApiTrello\ApiTrello\
+2024-04-04 23:51:03.9601|INFO|Microsoft.AspNetCore.Cors.Infrastructure.CorsService|CORS policy execution successful.
+2024-04-04 23:51:04.0331|INFO|Microsoft.AspNetCore.Routing.EndpointMiddleware|Executing endpoint 'ApiTrello.Controllers.BoardsController.PostBoard (ApiTrello)'
+2024-04-04 23:51:04.0617|INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Route matched with {action = "PostBoard", controller = "Boards"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[ApiTrello.Models.Board]] PostBoard(ApiTrello.Models.Board) on controller ApiTrello.Controllers.BoardsController (ApiTrello).
+2024-04-04 23:51:04.9949|INFO|Microsoft.EntityFrameworkCore.Infrastructure|Entity Framework Core 6.0.28 initialized 'TrelloContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:6.0.28' with options: None
+2024-04-04 23:51:08.5322|INFO|Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker|Executed action ApiTrello.Controllers.BoardsController.PostBoard (ApiTrello) in 4467.0418ms
+2024-04-04 23:51:08.5322|INFO|Microsoft.AspNetCore.Routing.EndpointMiddleware|Executed endpoint 'ApiTrello.Controllers.BoardsController.PostBoard (ApiTrello)'
