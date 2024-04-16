@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "Ty0K8gY2LB6D53TJ5LhFEUF258xH8o0LVJBY/R8oeDeGxTu7/QIQAKVXfgzd5W4wITP9wloYh02k0ncsEqgApw==",
+  "dgSpecHash": "JzzEQmTYn5ZNL8RE815rpHoMuhlwjHBm96EFURSNTHZC0CucXD3BoKGtF5pl+JNmTp/ytL55mIz7qdhMPVFxNg==",
   "success": true,
-  "projectFilePath": "C:\\Users\\xamel\\OneDrive\\Desktop\\ApiTrello\\ApiTrello\\ApiTrello.csproj",
+  "projectFilePath": "C:\\Users\\xamel\\OneDrive\\Desktop\\ln\\ApiTrello\\ApiTrello\\ApiTrello.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\xamel\\.nuget\\packages\\humanizer\\2.14.1\\humanizer.2.14.1.nupkg.sha512",
     "C:\\Users\\xamel\\.nuget\\packages\\humanizer.core\\2.14.1\\humanizer.core.2.14.1.nupkg.sha512",

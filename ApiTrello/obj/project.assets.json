@@ -11814,11 +11814,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\xamel\\OneDrive\\Desktop\\ApiTrello\\ApiTrello\\ApiTrello.csproj",
+      "projectUniqueName": "C:\\Users\\xamel\\OneDrive\\Desktop\\ln\\ApiTrello\\ApiTrello\\ApiTrello.csproj",
       "projectName": "ApiTrello",
-      "projectPath": "C:\\Users\\xamel\\OneDrive\\Desktop\\ApiTrello\\ApiTrello\\ApiTrello.csproj",
+      "projectPath": "C:\\Users\\xamel\\OneDrive\\Desktop\\ln\\ApiTrello\\ApiTrello\\ApiTrello.csproj",
       "packagesPath": "C:\\Users\\xamel\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\xamel\\OneDrive\\Desktop\\ApiTrello\\ApiTrello\\obj\\",
+      "outputPath": "C:\\Users\\xamel\\OneDrive\\Desktop\\ln\\ApiTrello\\ApiTrello\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "D:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"

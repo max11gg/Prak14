@@ -1,4 +1,6 @@
 ﻿using Prometheus;
+using Microsoft.AspNetCore.Builder;
+using Microsoft.AspNetCore.Http;
 
 public static class PrometheusMetricsExtensions
 {
@@ -18,7 +20,7 @@ public static class PrometheusMetricsExtensions
             new HistogramConfiguration
             {
                 LabelNames = new[] { "method", "path" },
-                Buckets = Histogram.ExponentialBuckets(0.01, 2, 10)  
+                Buckets = Histogram.ExponentialBuckets(0.01, 2, 10)
             });
 
         var inProgressGauge = Metrics.CreateGauge(
@@ -31,30 +33,31 @@ public static class PrometheusMetricsExtensions
 
         app.Use(async (context, next) =>
         {
-            var path = NormalizePath(context.Request.Path); 
+            var path = NormalizePath(context.Request.Path);
             var method = context.Request.Method;
-
-            inProgressGauge.WithLabels(method, path).Inc();
-
-            var timer = requestDuration.WithLabels(method, path).NewTimer();  
 
             try
             {
-                await next(); 
+                inProgressGauge.WithLabels(method, path).Inc();
+
+                var timer = requestDuration.WithLabels(method, path).NewTimer();
+
+                await next();
+
+                timer.ObserveDuration();
             }
             finally
             {
-                timer.ObserveDuration();  
-                inProgressGauge.WithLabels(method, path).Dec(); 
+                inProgressGauge.WithLabels(method, path).Dec();
             }
         });
 
         return app;
     }
 
-    private static string NormalizePath(string path)
+    private static string NormalizePath(PathString path)
     {
-        var segments = path.Trim('/').Split('/');
+        var segments = path.ToString().Trim('/').Split('/');
 
         for (int i = 0; i < segments.Length; i++)
         {
@@ -66,5 +69,4 @@ public static class PrometheusMetricsExtensions
 
         return "/" + string.Join("/", segments);
     }
-
 }

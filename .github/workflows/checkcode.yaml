@@ -1,4 +1,4 @@
-name: CodeStyle C# 
+name: CodeStyle C#
 
 on: [push, pull_request]
 
@@ -14,4 +14,6 @@ jobs:
     - name: Restore dependencies
       run: dotnet restore
     - name: Build and check style
-      run: dotnet build
+      run: |
+        dotnet build
+        dotnet format --check

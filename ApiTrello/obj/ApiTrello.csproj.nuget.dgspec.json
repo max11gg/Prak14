@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\xamel\\OneDrive\\Desktop\\ApiTrello\\ApiTrello\\ApiTrello.csproj": {}
+    "C:\\Users\\xamel\\OneDrive\\Desktop\\ln\\ApiTrello\\ApiTrello\\ApiTrello.csproj": {}
   },
   "projects": {
-    "C:\\Users\\xamel\\OneDrive\\Desktop\\ApiTrello\\ApiTrello\\ApiTrello.csproj": {
+    "C:\\Users\\xamel\\OneDrive\\Desktop\\ln\\ApiTrello\\ApiTrello\\ApiTrello.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\xamel\\OneDrive\\Desktop\\ApiTrello\\ApiTrello\\ApiTrello.csproj",
+        "projectUniqueName": "C:\\Users\\xamel\\OneDrive\\Desktop\\ln\\ApiTrello\\ApiTrello\\ApiTrello.csproj",
         "projectName": "ApiTrello",
-        "projectPath": "C:\\Users\\xamel\\OneDrive\\Desktop\\ApiTrello\\ApiTrello\\ApiTrello.csproj",
+        "projectPath": "C:\\Users\\xamel\\OneDrive\\Desktop\\ln\\ApiTrello\\ApiTrello\\ApiTrello.csproj",
         "packagesPath": "C:\\Users\\xamel\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\xamel\\OneDrive\\Desktop\\ApiTrello\\ApiTrello\\obj\\",
+        "outputPath": "C:\\Users\\xamel\\OneDrive\\Desktop\\ln\\ApiTrello\\ApiTrello\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "D:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -75,6 +75,8 @@
               "version": "[5.3.8, )"
             },
             "StyleCop.Analyzers": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+              "suppressParent": "All",
               "target": "Package",
               "version": "[1.1.118, )"
             },
